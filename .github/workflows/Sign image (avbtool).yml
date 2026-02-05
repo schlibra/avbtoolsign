@@ -10,11 +10,11 @@ on:
       BOOT_URL:
         description: 'URL of the boot/recovery image you want to sign'
         required: true
-        default: ''
+        default: 'https://github.com/schlibra/avbtoolsign/raw/refs/heads/main/boot_b.img'
       VBM_URL:
         description: 'URL of the vbmeta image in your device'
         required: true
-        default: ''
+        default: 'https://github.com/schlibra/avbtoolsign/raw/refs/heads/main/vbmeta.img'
       TARGET:
         description: 'Which partition you want to sign?'
         required: true
@@ -22,7 +22,7 @@ on:
       SIZE:
         description: 'What is your boot/recovery PARTITION(not image) size?(size unit is bytes)'
         required: true
-        default: '36700160'
+        default: '67108864'
       VER:
         description: 'What is your Android version? (For padding DHTB header to vbmeta)'
         required: true
